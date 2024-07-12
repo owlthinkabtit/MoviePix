@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>for AniList</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="app">
       <div class="flex flex-col">
         <header class="navbar">
-          <div class="nav content-wrapper">
-            <div class="logo">AniList Search</div>
+          <div class="nav__content-wrapper">
+            <div class="logo"><img class="logo-img" src="https://anilist.co/img/icons/icon.svg"></div>
             <div class="nav-links">
               <a href="#" class="nav-link">Home</a>
               <a href="/" class="nav-link">Discover Anime</a>
@@ -26,7 +27,11 @@
               <h2 class="lp-sub--title">Find your perfect series with <span class="blue">AniList</span></h2>
             </div>
           </div>
-          <div class="lp-input__wrapper"></div>
+          <div class="lp-input__wrapper">
+            <input type="text" placeholder="Search by Series, Genre, or Keyword">
+            <button class="search-btn">Go</button>
+          </div>
+          <img src="./assets/kitsunemask.svg" class="lp-img">
         </section>
       </div>
     </div>
