@@ -17,36 +17,35 @@ a {
     text-decoration: none;
 }
 
-.blue {
-    color: #a71f90;
-}
 
 
 /* NAVIGATION */
 
 .flex-col {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .navbar {
     height: 326px; 
-    padding: 40px 15px; 
+    padding: 40px 15px;
     background-color: grey; 
     align-items: center; 
     position: relative; 
+    display: flex;
 }
 
 .content-wrapper {
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between !important;
+    align-items: center !important;
     flex-direction: row; 
-    margin-top: -20px; 
-    display: flex;
-    margin: 0 auto; 
+    z-index: 1005;
+    display: flex !important;
+    margin: 0 auto;
     width: 100%;
     max-width: 1200px;
     flex-wrap: wrap; 
+
 }
 
 .logo {
@@ -58,14 +57,6 @@ a {
     border-radius: 8px;
 }
 
-.logo-txt {
-    font-weight: 700;
-    font-size: 40px; 
-    display: flex;
-    position: relative;
-    color: white;
-}
-
 .links {
     display: flex;
     align-items: center;
@@ -74,10 +65,94 @@ a {
     max-width: 430px;
 }
 
-.link {
+.nav-link {
     position: relative; 
+    font-size: 18px; 
+    font-weight: 600;
 }
 
+.overlay {
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 50%;
+    background-image: url(https://i.redd.it/4fxxbm4opjd31.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+/* SEARCH */
+
+.input-wrap {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 50px; 
+    overflow: hidden;
+}
+
+input {
+    color: rgb(0, 0, 0, .87);
+    width: 100%;
+    max-width: 800px; 
+    height: 60px; 
+    font-size: 20px; 
+    padding-left: 20px;
+    align-items: center;
+}
+
+.content--wrapper {
+  align-items: center;
+  flex-direction: column; 
+  z-index: 2;
+  justify-content: space-between;
+  margin: 40px;
+
+}
+
+.sub-title {
+    font-weight: 500; 
+    text-align: center;
+    letter-spacing: .1em;
+    font-size: 45px; 
+    max-width: 1000px; 
+    margin-bottom: 40px; 
+    color: white;
+    align-items: center;
+
+}
+
+.search-wrapper {
+    position: absolute; 
+    cursor: pointer; 
+    top: 0; 
+    bottom: 0; 
+    right: 0; 
+    z-index: 10000;
+    padding: 0 20px 0 8px; 
+    color:rgb(6, 46, 163);
+    font-size: 32px; 
+    transition: all .2s ease;
+    align-items: center;
+}
+
+.fa-search {
+    overflow: visible; 
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+}
 
 
 
