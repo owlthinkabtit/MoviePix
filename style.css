@@ -56,6 +56,11 @@ a {
     border-radius: 8px;
 }
 
+.logo-img {
+    height: 40px;
+    width: 150px;
+}
+
 .links {
     display: flex;
     align-items: center;
@@ -106,7 +111,22 @@ a {
     background-position: 50%;
     background-size: cover;
     background-attachment: fixed;
+}
 
+.contact-btn {
+    display: flex;
+    cursor: pointer;
+    max-height: 48px; 
+    min-height: 48px; 
+    padding: 12px 40px; 
+    align-items: center;
+    border: 2px rgb(6, 46, 163);
+    border-radius: 50px; 
+    color: white;
+    background-color: rgb(6, 46, 163);
+    font-size: 13px;
+    letter-spacing: 1px; 
+    text-transform: uppercase;
 }
 
 
@@ -132,10 +152,14 @@ input {
 }
 
 .content--wrapper {
-  z-index: 2;
-  flex-direction: column;
+  margin: 0 auto; 
+  width: 100%;
+  max-width: 1200px; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
   align-items: center;
-  margin-top: 40px; 
+  z-index: 2;
 
 }
 
@@ -153,24 +177,28 @@ input {
 
 .search-wrapper {
     position: absolute; 
+    justify-content: center;
+    align-items: center;
     cursor: pointer; 
-    top: 0; 
-    bottom: 0; 
-    right: 0; 
+    top: 0;
+    bottom: 0;
+    right: 0;
     z-index: 10000;
     padding: 0 20px 0 8px; 
     color:rgb(6, 46, 163);
     font-size: 32px; 
-    transition: all .2s ease;
-    align-items: center;
+    height: 60px; 
+    width: 60px; 
+    display: flex;
+    
+
 }
 
 .fa-search {
     overflow: visible; 
-    width: 1em;
-    height: 1em;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
