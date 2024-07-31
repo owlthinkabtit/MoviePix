@@ -131,7 +131,7 @@ a {
 
 
 
-/* SEARCH */
+/* SEARCH BAR */
 
 .input-wrap {
     width: 100%;
@@ -202,7 +202,48 @@ input {
 }
 
 
+/* SEARCH RESULTS */
 
+#search {
+    position: relative;
+    padding: 40px 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+#filter {
+    padding: 0 20px; 
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.search-info {
+    color:rgb(6, 46, 163);
+    padding: 20px 0;
+    font-size: 28px; 
+    line-height: 1.25;
+}
+
+.black-txt {
+    color: #0a1f44;
+    display: inline-block;
+}
+
+#movies {
+    padding-top: 40px; 
+}
+
+.movies__content-wrapper {
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    flex-wrap: wrap; 
+}
 
 
 
