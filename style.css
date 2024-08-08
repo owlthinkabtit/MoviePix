@@ -309,7 +309,7 @@ input {
 
 .movie:hover .overview {
     opacity: 1;
-    transform: translateY(-100%);
+    transform: translateY(-101%);
 }
 
 
