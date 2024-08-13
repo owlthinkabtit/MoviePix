@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MoviePix</title>
     <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      src="https://kit.fontawesome.com/993d4d649d.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
@@ -31,15 +31,17 @@
               <input
                 type="text"
                 placeholder="Search by, Title, Genre, or Keyword"
+                id="search-bar" onclick="searchMovie(event)"
               />
               <div class="search-wrapper">
-                <img src="./assets/search.png" class="search-img" />
+                <!--<img src="./assets/search.png" class="search-img" />-->
+                <i class="fas fa-search" id="button"></i>
               </div>
             </div>
           </div>
           <div class="overlay"></div>
         </div>
-        <section id="search">
+        <section id="main">
           <div class="progress-bar">
             <div class="progress-bar-track"></div>
             <div class="progress-bar-fill"></div>

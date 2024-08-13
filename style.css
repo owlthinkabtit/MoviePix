@@ -199,24 +199,24 @@ input {
     display: flex;
 }
 
-.search-img {
-    overflow: visible; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.fa-search {
     color:rgb(6, 46, 163);
+    height: 32px;
+    width: 32px; 
+    font-size: inherit;
+
 }
 
-.search-img:hover {
-    color:rgb(6, 46, 163);
-    background-color: white; 
+.fa-search:hover {
+    background-color: white;
+    color: rgb(255, 98, 0);
     transition:all .45s ease;
 }
 
 
 /*SEARCH RESULTS */
 
-#search {
+#main {
     padding: 40px 20px; 
     
 

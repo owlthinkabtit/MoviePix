@@ -1,16 +1,15 @@
-//properly use the IMBd API like this https://www.omdbapi.com/?t=House&apikey=ef4c3159
-//using the api on themoviedatabase.org instead
+//using the api on themoviedatabase.org 
 
 const API_KEY = 'api_key=e87a0dde459d4dbbc77f2e6343e3cfc8';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
-const searchURL = BASE_URL + '/search/movie?' + API_KEY;
+const searchURL = BASE_URL + '/search/movie?'+API_KEY;
 
 
-const main = document.getElementById(' movies');
-//const form = document.getElementById(' form');
-const search = document.getElementById(' search');
+const main = document.getElementById('movies');
+const form = document.getElementsByClassName('search-bar');
+const search = document.getElementsByClassName('search-bar');
 
 getMovies(API_URL);
 
@@ -56,12 +55,12 @@ function getColor(vote) {
   }
 }
 
-form.addEventListener('submit', (e) => {
+searchMovie.addEventListener('onclick', (e) => {
    e.preventDefault();
 
    const searchTerm = search.value;
 
    if(searchTerm) {
-    getMovies(searchURL + '/'+searchTerm)
-   }
-})
+    getMovies(searchURL+'&query='+searchTerm)
+   };
+});
