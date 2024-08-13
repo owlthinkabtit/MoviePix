@@ -9,7 +9,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
-    <script src="lethimcook.js"></script>
   </head>
   <body>
     <div id="app">
@@ -28,11 +27,14 @@
           <div class="content--wrapper">
             <h1 class="sub-title">Start your cinematic adventure now</h1>
             <div class="input-wrap">
-              <input
-                type="text"
-                placeholder="Search by, Title, Genre, or Keyword"
-                id="search-bar" onclick="searchMovie(event)"
-              />
+              <form id="form">
+                <input type="text" placeholder="Search..." id="search" class="search">
+              </form>
+              <!--<input
+              type="text"
+              placeholder="Search by, Title, Genre, or Keyword"
+              id="search-bar"
+              />-->
               <div class="search-wrapper">
                 <!--<img src="./assets/search.png" class="search-img" />-->
                 <i class="fas fa-search" id="button"></i>
@@ -64,7 +66,7 @@
                   distinctio error odio sunt facere, delectus consectetur.
                 </div>
               </div>
-                
+              
               <div class="movie">
                 <img class="movie-img" src="./assets/600x1000.svg" />
                 <div class="movie-info">
@@ -79,7 +81,7 @@
                   distinctio error odio sunt facere, delectus consectetur.
                 </div>
               </div>
-
+              
               <div class="movie">
                 <img class="movie-img" src="./assets/600x1000.svg" />
                 <div class="movie-info">
@@ -94,7 +96,7 @@
                   distinctio error odio sunt facere, delectus consectetur.
                 </div>
               </div>
-
+              
               <div class="movie">
                 <img class="movie-img" src="./assets/600x1000.svg" />
                 <div class="movie-info">
@@ -109,7 +111,7 @@
                   distinctio error odio sunt facere, delectus consectetur.
                 </div>
               </div>
-
+              
               <div class="movie">
                 <img class="movie-img" src="./assets/600x1000.svg" />
                 <div class="movie-info">
@@ -124,7 +126,7 @@
                   distinctio error odio sunt facere, delectus consectetur.
                 </div>
               </div>
-
+              
               <div class="movie">
                 <img class="movie-img" src="./assets/600x1000.svg" />
                 <div class="movie-info">
@@ -144,5 +146,7 @@
         </section>
       </div>
     </div>
+    <script src="lethimcook.js"></script>
   </body>
-</html>
+  </html>
+  
