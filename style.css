@@ -312,7 +312,15 @@ input {
     transform: translateY(-101%);
 }
 
+@media(max-width: 430px) {
+    .links {
+        display: none;
+    }
 
+    .logo{
+        
+    }
+}
 
 
 
