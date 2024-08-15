@@ -317,8 +317,9 @@ input {
         display: none;
     }
 
-    .logo{
-        
+    .sub-title {
+        font-size: 22px;
+        margin-top: 16px; 
     }
 }
 
