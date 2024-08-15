@@ -321,6 +321,11 @@ input {
         font-size: 22px;
         margin-top: 16px; 
     }
+
+    .fa-bars {
+        color: white;
+        font-size: inherit;
+    }
 }
 
 
