@@ -213,6 +213,10 @@ input {
     transition:all .45s ease;
 }
 
+.fa-bars {
+    display: none;
+}
+
 
 /*SEARCH RESULTS */
 
