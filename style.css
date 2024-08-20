@@ -120,7 +120,7 @@ a {
 
 .contact-btn {
     display: flex;
-    cursor: pointer;
+    cursor: not-allowed;
     max-height: 48px; 
     min-height: 48px; 
     padding: 12px 40px; 
@@ -132,6 +132,10 @@ a {
     font-size: 13px;
     letter-spacing: 1px; 
     text-transform: uppercase;
+}
+
+.nav-search {
+    cursor: not-allowed;
 }
 
 .contact-btn:hover {
@@ -201,11 +205,11 @@ input {
 
 .fa-search {
     color:rgb(6, 46, 163);
-    height: 32px;
-    width: 32px; 
+    width: 100%;
+    align-items: center;
     font-size: inherit;
-
 }
+
 
 .fa-search:hover {
     background-color: white;
@@ -316,7 +320,9 @@ input {
     transform: translateY(-101%);
 }
 
-@media(max-width: 430px) {
+
+
+@media (max-width: 430px) {
     .links {
         display: none;
     }
