@@ -320,7 +320,50 @@ input {
     transform: translateY(-101%);
 }
 
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
 
+    .sub-title {
+        font-size: 32px;
+        margin-top: 16px; 
+        text-align: center;
+    }
+
+    .fa-bars {
+        display: flex;
+        color: white; 
+    }
+
+    .content-wrapper {
+        height: 100%;
+    }
+
+    .logo-img {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 300px;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-img {
+        height: 40px; 
+        width: 150px;
+    }
+
+    .sub-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .fa-bars {
+        display: flex;
+    }
+}
 
 @media (max-width: 430px) {
     .links {
@@ -335,6 +378,7 @@ input {
     .fa-bars {
         color: white;
         font-size: inherit;
+        display: flex;
     }
 }
 
