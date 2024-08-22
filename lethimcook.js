@@ -58,6 +58,20 @@ function getColor(vote) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  const searchButton = document.getElementById('button');
+  const searchInput = document.getElementById('search');
+  
+  if (searchButton) {
+    searchButton.addEventListener("click", () => {
+      const searchTerm = searchInput.value;
+      if (searchTerm) {
+        getMovies(searchURL + '&query=' + searchTerm);
+      }
+    });
+  }
+});
+
+/*document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('form');
   if (form) {
     form.addEventListener("submit", (e) => {
@@ -68,5 +82,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-});
+});*/
 
