@@ -92,17 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.getElementById('close-btn'); 
   const menuLinks = document.querySelectorAll('.mobile-menu a');
 
-  // Toggle the mobile menu
   hamburgerIcon.addEventListener('click', () => {
     mobileMenu.classList.toggle('show');
   });
 
-  // Close menu when close button is clicked
   closeBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('show');
   });
 
-  // Close menu when any menu link (like "Search") is clicked
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('show');
