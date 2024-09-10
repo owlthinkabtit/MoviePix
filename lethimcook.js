@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (form) {
     form.addEventListener("submit", (e) => {
-      e.preventDefault(); // Prevent form from refreshing the page
+      e.preventDefault();
       const searchTerm = searchInput.value;
       if (searchTerm) {
         getMovies(searchURL + '&query=' + searchTerm);
@@ -86,4 +86,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeBtn = document.getElementById('close-btn'); 
+  const menuLinks = document.querySelectorAll('.mobile-menu a');
 
+  // Toggle the mobile menu
+  hamburgerIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show');
+  });
+
+  // Close menu when close button is clicked
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('show');
+  });
+
+  // Close menu when any menu link (like "Search") is clicked
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('show');
+    });
+  });
+});
