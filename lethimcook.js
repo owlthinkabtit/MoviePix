@@ -71,16 +71,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-/*document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('form');
+  const searchInput = document.getElementById('search');
+  
   if (form) {
     form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const searchTerm = search.value;
+      e.preventDefault(); // Prevent form from refreshing the page
+      const searchTerm = searchInput.value;
       if (searchTerm) {
-        getMovies(searchURL + '&query=' + searchTerm)
+        getMovies(searchURL + '&query=' + searchTerm);
       }
     });
   }
-});*/
+});
+
 
